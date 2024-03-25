@@ -6,41 +6,18 @@ const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
 
-const directoryPath = '../img/';
-  
-const imgFiles = [];
-const fs = require('fs');
-
-function getFiles(directoryPath, imgFiles) {
-    const filesInDirectory = fs.readdirSync(directoryPath);
-  
-    for (const file of filesInDirectory) {
-      const filePath = `${directoryPath}/${file}`;
-  
-      if (fs.statSync(filePath).isDirectory()) {
-        getFiles(filePath, imgFiles);
-      } else {
-        imgFiles.push(filePath);
-      }
-    }
-  }
-  
-  getFiles(directoryPath, imgFiles);
-  
-  console.log(imgFiles);
-
-//image container?
-const container = document.querySelector("#image-container");
-
-imgFiles.forEach((imgFiles) => {
-  const img = document.createElement("img");
-  img.src = imgFiles;
-  container.appendChild(img);
-});
-
-
+const imgFiles = ['pic1.jpg', `pic2.jpg`, `pic3.jpg`, `pic4.jpg`, `pic5.jpg`];
 
 /* Declaring the alternative text for each image file */
+
+const alts = {
+    'pic1.jpg' : 'Closeup of a human eye',
+    'pic2.jpg' : 'Rock that looks like a wave',
+    'pic3.jpg' : 'Purple and white pansies',
+    'pic4.jpg' : 'Section of wall from a pharoah\'s tomb',
+    'pic5.jpg' : 'Large moth on a leaf'
+  }
+
 
 //alt text replace function for items in imgFiles, replace "_" with " " so "Closeup_of_an_eye.jpg" becomes "Closeup of an eye"
 //const filename = "This_is_a_closeup_of_an_eye.jpg";
