@@ -9,6 +9,7 @@ const overlay = document.querySelector('.overlay');
 const directoryPath = '../img/';
   
 const imgFiles = [];
+const fs = require('fs');
 
 function getFiles(directoryPath, imgFiles) {
     const filesInDirectory = fs.readdirSync(directoryPath);
