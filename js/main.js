@@ -30,6 +30,8 @@ function getFiles(directoryPath, imgFiles) {
 
 /* Declaring the alternative text for each image file */
 
+//alt text replace function for items in imgFiles, replace "_" with " " so "Closeup_of_an_eye.jpg" becomes "Closeup of an eye"
+
 /* Looping through images */
 
 const newImage = document.createElement('img');
