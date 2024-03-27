@@ -5,14 +5,15 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-
+const directoryPath = './img';
+const imagePaths = [];
 const imgFiles = ['pic1.jpg', `pic2.jpg`, `pic3.jpg`, `pic4.jpg`, `pic5.jpg`];
 
 /*
 const fs = require('fs');
 
 // Get the directory path
-const directoryPath = './images';
+const directoryPath = './img';
 
 // Create an empty array to store the image paths
 const imagePaths = [];
@@ -29,6 +30,8 @@ fs.readdirSync(directoryPath).forEach(file => {
 */
 
 /* Declaring the alternative text for each image file */
+// Get the directory path
+
 
 const alts = {
     'pic1.jpg' : 'Weird eye image',
