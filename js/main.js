@@ -80,3 +80,4 @@ fs.readdirSync(directoryPath).forEach(file => {
 //const filename = "This_is_a_closeup_of_an_eye.jpg";
 //altText = filename.replaceAll("_", " ");
 //console.log(altText.replace(".jpg", ""));
+//push altText into a seperate array but then iterating has to be done twice?? can you iterate properties over again?

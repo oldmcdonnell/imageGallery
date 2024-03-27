@@ -27,7 +27,7 @@ body {
 button {
   border: 0;
   background: rgba(150,150,150,0.6);
-  text-shadow: 1px 1px 1px white;
+  text-shadow: 1px 1px 1px rgb(235, 212, 212);
   border: 1px solid #999;
   position: absolute;
   cursor: pointer;
